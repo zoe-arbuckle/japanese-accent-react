@@ -1,12 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
-const HomeScreen = props => {
+function HomeScreen({ navigation }) {
     return (
         <View style={styles.screen}>
             <Text>Welcome</Text>
             <View>
-                <Button title="Click me!" onPress={() => {}}/>
+                <Button 
+                    title="Click me!" 
+                    onPress={() => navigation.navigate('Lesson')}
+                />
             </View>
         </View>
     );

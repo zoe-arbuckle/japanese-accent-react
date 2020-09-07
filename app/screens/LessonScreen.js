@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
-const LessonScreen = props => {
+function LessonScreen() {
     return (
         <View style={styles.screen}>
             <Text>This is the second screen</Text>
