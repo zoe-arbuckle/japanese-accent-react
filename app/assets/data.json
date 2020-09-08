@@ -1,0 +1,26 @@
+{
+    "lessons": [
+        {
+            "lessonid": 0,
+            "lessonName": "Introduction",
+            "lessonDescription": "Lesson 0",
+            "lessonText": "Introduction",
+            "quiz": {
+                "questions": [
+                
+                ]
+            }
+        },
+        {
+            "lessonid": 2.1,
+            "lessonName": "Voiced and voiceless sounds",
+            "lessonDescription": "Lesson 2.1",
+            "lessonText": "When vocal cord vibrates, voiced sound is generated. For example, \"g\" is voiced while \"k\" is a voiceless consonant. It is generally not difficult sound to hear or pronounce. Research has shown that Chinese native speakers would have difficulty with hearing voicless consonant in some conditions.\n",
+            "quiz": {
+                "questions": [
+                
+                ]
+            }
+        }
+    ]
+}

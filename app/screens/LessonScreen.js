@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
-function LessonScreen() {
+function LessonScreen({ route, navigation }) {
+    const {lessonName} = route.params;
     return (
         <View style={styles.screen}>
-            <Text>This is the second screen</Text>
+            <Text style={styles.text}>{lessonName}</Text>
             <View>
                 <Button title="Click!" onPress={() => {}}/>
             </View>
@@ -20,6 +21,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    text: {
+        color: 'black',
+        fontSize: 18,
+    }
 });
 
 export default LessonScreen;

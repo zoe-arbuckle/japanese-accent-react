@@ -1,16 +1,28 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
+import LessonButton from '../components/LessonButton';
+
+import data from '../assets/data'
+
+let lessons = data.lessons;
+console.log(lessons);
+
 function HomeScreen({ navigation }) {
     return (
         <View style={styles.screen}>
-            <Text>Welcome</Text>
-            <View>
-                <Button 
-                    title="Click me!" 
-                    onPress={() => navigation.navigate('Lesson')}
-                />
-            </View>
+           {
+                    lessons.map((item, index) => (
+                        
+                        <LessonButton 
+                            key={item.lessonid}
+                            title={item.lessonName}
+                            onPress={() => navigation.navigate('Lesson', {
+                                lessonName: item.lessonName,
+                            })}>
+                        </LessonButton>
+                    ))
+                }
         </View>
     );
 };
