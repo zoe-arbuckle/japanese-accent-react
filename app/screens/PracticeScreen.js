@@ -1,14 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
-function LessonScreen({ route, navigation }) {
-    const {lessonName} = route.params;
+function PracticeScreen({ navigation }) {
     return (
         <View style={styles.screen}>
-            <Text style={styles.text}>{lessonName}</Text>
-            <View>
-                <Button title="Practice" onPress={() => navigation.navigate('Practice')}/>
-            </View>
+            <Text style={styles.text}>Practice!</Text>
         </View>
     );
 };
@@ -27,4 +23,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default LessonScreen;
+export default PracticeScreen;
